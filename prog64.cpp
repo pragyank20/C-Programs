@@ -6,22 +6,22 @@ float r;
 
 public:
        Sample(){
-t=2;
-p=2000;
-r=0.08;
+t=0;
+p=0;
+r=0;
 }
 
-     Sample(int p1,float r1){
+     Sample(long p1,float r1){
 t=2;
 p=p1;
 r=r1;
 }
-     Sample(int t1,int p1){
-t=t;
+     Sample(int t1,long p1){
+t=t1;
 p=p1;
 r=0.08;
 }
-      Sample(int t1 ,int p1, float r1){
+      Sample(int t1 ,long p1, float r1){
 t=t1;
 p=p1;
 r=r1;
@@ -43,7 +43,8 @@ cout<<"Total Amount is"<<total<<endl;;
 
 
 int main(){
-int p,r,t;
+long p;
+int r,t;
 cout<<"Enter Principal , rate , Time"<<endl;
 cin>>p>>r>>t;
 Sample s1;
@@ -55,4 +56,5 @@ s1.display();
 s2.display();
 s3.display();
 s4.display();
+s5.display();
 }
