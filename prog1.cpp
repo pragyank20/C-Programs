@@ -1,9 +1,19 @@
 #include<iostream>
-using namespace std;
-int main(){
-int i;
+using namespace std;\
+class Sample{
+int roll,marks;
 
-for(i=1;i<=10;i++){
-cout<<i<<endl;
+public: Sample(){
+cout<<"Enetr Roll No. and marks"<<endl;
+cin>>roll>>marks;
 }
+void display(){
+cout<<"Roll No.:"<<roll<<endl<<"Marks:"<<marks<<endl;
 }
+};
+int main(){
+Sample ob;
+ob.display();
+}
+
+
