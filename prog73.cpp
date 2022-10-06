@@ -27,7 +27,7 @@ public:
            void display(){
 total=s1+s2+s3;
 total1=s11+s22+s33;
-avg=(total+total1)/2.0;
+avg=(total+total1)/3.0;
 cout<<"Total Marks Of Internal marks are:"<<total<<endl;
 cout<<"Total Marks Of Internal marks are:"<<total1<<endl;
 cout<<"Total Marks Of Internal marks and External marks are:"<<total+total1<<endl;
