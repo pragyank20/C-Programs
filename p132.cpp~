@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+
+class Sample{
+int n;
+public:
+        
+        Sample(int y){
+        n=y;
+        }
+        
+        };
+        
+int main(){
+int b;
+cout<<"Enter Percentage"<<endl;
+cin>>b;
+int z;
+try{
+if(b<=40){
+Sample s(b);
+throw b;
+}
+else
+throw z;
+}
+catch (int c){
+cout<<"You are Passed"<<"-"<<b;
+}
+catch (int x){
+cout<<"You are Failed!!!"<<"-"<<b;
+}
+}
